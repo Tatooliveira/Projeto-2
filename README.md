@@ -1,1 +1,4 @@
-# Projeto-2 bora lá 
+# Projeto-2 
+Alisson
+Otávio Augusto Bragalha de Oliveira
+Victor Caetano
