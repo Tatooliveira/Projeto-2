@@ -8,7 +8,7 @@
 
 # Criação das tabelas
 
-Para a criação das tabelas, crie um banco de dados e execute o script tabela.sql
+Para a criação das tabelas, crie um banco de dados e execute o script Tabelas.sql
 
 # Criação de Dados
 
@@ -17,6 +17,10 @@ Para a criação das tabelas, crie um banco de dados e execute o script tabela.s
 O script utiliza uma biblioteca para geração de dados fictícios
 
 `pip install Faker`
+
+## Setup
+
+Para conseguir rodar com exito, será necessario atualizar suas credencias no arquivo createData.py, dentro da função "conectar_banco"
 
 ## Execução
 
@@ -34,5 +38,5 @@ Otávio Augusto Bragalha de Oliveira RA: 11.120.229-7
 
 Victor Caetano RA: 11.120.428-5
 
-Alisson RA: 11.120.044-0
+Alisson Moriyasu Pinto RA: 11.120.044-0
 
