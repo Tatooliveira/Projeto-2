@@ -9,9 +9,10 @@ CREATE TABLE Usuario (
     Data_Cadastro DATE NOT NULL
 );
 
+-- Tabela Categoria (com o campo "Descricao")
 CREATE TABLE Categoria (
     ID_Categoria INT AUTO_INCREMENT PRIMARY KEY,
-    Nome VARCHAR(100) NOT NULL
+    Nome VARCHAR(100) NOT NULL UNIQUE,
 );
 
 -- Tabela Editora
@@ -33,7 +34,7 @@ CREATE TABLE Livro (
         ON UPDATE CASCADE
 );
 
--- Tabela associativa Livro_Categoria para relação N:M entre Livro e Categoria
+-- Tabela associativa Livro_Categoria
 CREATE TABLE Livro_Categoria (
     ID_Livro INT,
     ID_Categoria INT,
@@ -60,3 +61,4 @@ CREATE TABLE Emprestimo (
         ON DELETE CASCADE
         ON UPDATE CASCADE
 );
+

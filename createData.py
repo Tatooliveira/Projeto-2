@@ -10,7 +10,7 @@ def conectar_banco():
     return mysql.connector.connect(
         host="localhost",        # Substitua pelo seu host
         user="root",             # Substitua pelo seu usuário
-        password="-------",    # Substitua pela sua senha
+        password="------",    # Substitua pela sua senha
         database="projeto2"
     )
 
@@ -77,9 +77,19 @@ def seed_livros(cursor, quantidade=20):
 
 # Função para popular a tabela Categoria
 def seed_categorias(cursor):
-    categorias = ["Ficção", "Não-ficção", "História", "Ciência", "Romance"]
+    categorias = [
+        {"Nome": "Ficção", "Descricao": "Livros baseados em histórias fictícias."},
+        {"Nome": "Não-ficção", "Descricao": "Livros baseados em fatos reais."},
+        {"Nome": "História", "Descricao": "Livros sobre eventos históricos."},
+        {"Nome": "Ciência", "Descricao": "Livros sobre ciência e descobertas."},
+        {"Nome": "Romance", "Descricao": "Livros com histórias de amor."}
+    ]
+
     for categoria in categorias:
-        cursor.execute("INSERT INTO Categoria (Nome) VALUES (%s)", (categoria,))
+        cursor.execute(
+            "INSERT INTO Categoria (Nome, Descricao) VALUES (%s, %s)", 
+            (categoria["Nome"], categoria["Descricao"])
+        )
     print(f"{len(categorias)} categorias inseridas.")
 
 # Função para popular a tabela Livro_Categoria

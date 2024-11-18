@@ -78,3 +78,6 @@ JOIN Usuario ON Emprestimo.ID_Usuario = Usuario.ID_Usuario
 JOIN Livro ON Emprestimo.ID_Livro = Livro.ID_Livro
 ORDER BY Emprestimo.Data_Emprestimo DESC;
 
+-- 11. Listar todas as categorias e suas descrições
+SELECT Nome, Descricao
+FROM Categoria;
