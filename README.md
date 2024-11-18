@@ -1,10 +1,10 @@
 # Modelo Relacional
 
-![Modelo Relacional](ModeloRelacional.png)
+![Modelo Relacional](Modelo_Relacional.jpeg)
 
 # Modelo Entidade-Relacional
 
-![Modelo Entidade-Relacional](ModeloEntidade-Relacional.png)
+![Modelo Entidade-Relacional](Modelo_Entidade_Relacional.jpeg)
 
 # Criação das tabelas
 
